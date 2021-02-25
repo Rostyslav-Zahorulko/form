@@ -2,9 +2,9 @@ import * as basicLightbox from 'basiclightbox';
 import 'basicLightbox/dist/basicLightbox.min.css';
 import refs from './refs';
 
-refs.showModalBtn.addEventListener('click', showLightbox);
+refs.showModalBtn.addEventListener('click', showModal);
 
-function showLightbox() {
+function showModal() {
   const instance = basicLightbox.create(
     `<div class="modal">
         <form class="form">
