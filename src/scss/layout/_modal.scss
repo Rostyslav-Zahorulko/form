@@ -6,9 +6,9 @@
   background-image: repeating-linear-gradient(
     -60deg,
     #ffffff,
-    #ffffff 24px,
-    #68c9ba 30px,
-    #68c9ba 12px
+    #ffffffff 20px,
+    #68c9ba 20px,
+    #68c9ba 30px
   );
 
   @media screen and (min-width: 1200px) {
@@ -56,12 +56,11 @@
 }
 
 .form-fields {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 
   @media screen and (min-width: 1200px) {
     margin-right: 40px;
+    margin-bottom: 0;
   }
 }
 
