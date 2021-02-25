@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rostyslav-Zahorulko/modal.git"
+    "url": "git+https://github.com/Rostyslav-Zahorulko/form.git"
   },
   "keywords": [],
   "author": "Rostyslav Zahorulko <rostyslav.zagorulko@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Rostyslav-Zahorulko/modal/issues"
+    "url": "https://github.com/Rostyslav-Zahorulko/form/issues"
   },
-  "homepage": "https://rostyslav-zahorulko.github.io/modal",
+  "homepage": "https://rostyslav-zahorulko.github.io/form",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
