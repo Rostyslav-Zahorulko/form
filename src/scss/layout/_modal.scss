@@ -1,6 +1,5 @@
 .modal {
   width: 1120px;
-  height: 560px;
   border-radius: 50px;
   padding: 30px;
 
@@ -32,16 +31,14 @@
 
 .form-content {
   display: flex;
-
   margin-bottom: 31px;
 }
 
 .form-field {
-  position: relative;
   width: 476px;
 
   &:not(:last-child) {
-    margin-bottom: 82px;
+    margin-bottom: 44px;
   }
 }
 
@@ -50,8 +47,7 @@
 }
 
 .form-label {
-  position: absolute;
-  transform: translate(0, -20px);
+  display: block;
   font-weight: 900;
   font-size: 16px;
   line-height: 1.6;
@@ -62,23 +58,23 @@
   width: 100%;
   border: none;
   border-bottom: 2px solid #9c69e2;
+
+  &:not(:placeholder-shown):valid {
+    border-color: green;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border-color: red;
+  }
 }
 
 .form-textarea {
   display: block;
   width: 476px;
-
-  background-attachment: local;
-  background-image: linear-gradient(to right, white 10px, transparent 10px),
-    linear-gradient(to left, white 10px, transparent 10px),
-    repeating-linear-gradient(
-      white,
-      white 60px,
-      #9c69e2 60px,
-      #9c69e2 61px,
-      white 61px
-    );
-  line-height: 50px;
+  padding: 0;
+  border: none;
+  resize: none;
+  line-height: 5;
 }
 
 .form-submit-btn {
@@ -86,9 +82,8 @@
   min-width: 170px;
   padding: 15px;
   margin-left: auto;
+  border: none;
   border-radius: 50px;
-  border-style: none;
-
   font-weight: 900;
   font-size: 18px;
   line-height: 1.6;

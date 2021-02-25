@@ -13,17 +13,17 @@ function showLightbox() {
                 <div class="form-fields">
                     <div class="form-field">
                         <label class="form-label" for="user-name">Name</label>
-                        <input class="form-input" type="text" name="name" id="user-name" />
+                        <input class="form-input" type="text" name="name" id="user-name" placeholder="Peter" required />
                     </div>
                     
                     <div class="form-field">
                         <label class="form-label" for="user-mail">Email</label>
-                        <input class="form-input" type="email" name="email" id="user-email"/>
+                        <input class="form-input" type="email" name="email" id="user-email" placeholder="peter123@gmail.com" required />
                     </div>
                     
                     <div class="form-field">
                         <label class="form-label" for="user-web">Web</label> 
-                        <input class="form-input" type="url" name="web" id="user-web"/>    
+                        <input class="form-input" type="url" name="web" id="user-web" placeholder="https://peter-parker.com" required />    
                     </div>  
                 </div>   
                 
