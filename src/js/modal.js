@@ -27,7 +27,7 @@ function showModal() {
                     </div>  
                 </div>   
                 
-                <div>
+                <div class="textarea-container">
                     <label class="form-label" for="message">Message</label>
                     <textarea class="form-textarea" name="message" rows="3" id="message"></textarea>
                 </div>

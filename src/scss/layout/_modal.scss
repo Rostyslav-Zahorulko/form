@@ -39,6 +39,7 @@
 }
 
 .form-content {
+  position: relative;
   margin-bottom: 20px;
 
   @media screen and (min-width: 1200px) {
@@ -77,6 +78,10 @@
   border: none;
   border-bottom: 2px solid #9c69e2;
 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+
   &:not(:placeholder-shown):valid {
     border-color: green;
   }
@@ -90,17 +95,50 @@
   }
 }
 
+.form-field::after {
+  content: ' ';
+  position: absolute;
+  transform: translate(0, 220px);
+  display: block;
+  width: 207px;
+  height: 2px;
+  background-color: #9c69e2;
+
+  @media screen and (min-width: 1200px) {
+    transform: translate(516px, -2px);
+    width: 476px;
+    z-index: 1000;
+  }
+}
+
+.textarea-container {
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
+}
+
+.textarea-container > .form-label {
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    z-index: 1000;
+  }
+}
+
 .form-textarea {
   display: block;
   width: 100%;
   padding: 0;
   border: none;
   resize: none;
-  line-height: 2.5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 4.8;
 
   @media screen and (min-width: 1200px) {
+    position: absolute;
+    transform: translate(0, -10px);
     width: 476px;
-    line-height: 5;
+    line-height: 6.5;
   }
 }
 
@@ -120,5 +158,6 @@
 
   @media screen and (min-width: 1200px) {
     margin-right: 0;
+    position: relative;
   }
 }
